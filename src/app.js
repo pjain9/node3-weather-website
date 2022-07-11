@@ -30,7 +30,7 @@ app.get("", (req, res) => {
 app.get("/help", (req, res) => {
 	res.render("help", {
 		title: "Help",
-		message: "This is some helpful text",
+		message: "App to check the weather!! For any help, Please contact the us",
 		name: "Piyush Jain",
 	});
 });
