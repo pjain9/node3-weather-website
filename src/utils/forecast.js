@@ -19,7 +19,7 @@ const forecast = (lat, long, callback) => {
 				body.current.condition.text +
 					". It is currently " +
 					body.current.temp_c +
-					" degrees out in " +
+					" degree celsius out in " +
 					body.location.name +
 					", " +
 					//body.location.region +
@@ -28,7 +28,12 @@ const forecast = (lat, long, callback) => {
 					body.location.country +
 					". There is a " +
 					body.current.precip_in +
-					"% chance of rain."
+					"% chance of rain." +
+					"The wind speed is " +
+					body.current.wind_kph +
+					" kph and it currently feels like " +
+					body.current.feelslike_c +
+					". degree celsius outside."
 			)}
 	});
 };
