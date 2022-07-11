@@ -30,14 +30,14 @@ app.get("", (req, res) => {
 app.get("/help", (req, res) => {
 	res.render("help", {
 		title: "Help",
-		message: "App to check the weather!! For any help, Please contact the us",
+		message: "App to check the weather!! For any help, Please contact Us!!",
 		name: "Piyush Jain",
 	});
 });
 
 app.get("/about", (req, res) => {
 	res.render("about", {
-		title: "About Me",
+		title: "About",
 		name: "Piyush Jain",
 	});
 });
